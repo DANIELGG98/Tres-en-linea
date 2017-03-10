@@ -10,6 +10,11 @@ package triqui;
  * @author Estudiantes
  */
 public class Tablero extends javax.swing.JFrame {
+    
+    
+    
+    Jugador jugador1=new Jugador();
+    Jugador jugador2=new Jugador();
 
     /**
      * Creates new form Tablero
