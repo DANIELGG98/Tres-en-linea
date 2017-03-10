@@ -15,13 +15,22 @@ public class Tablero extends javax.swing.JFrame {
     
     Jugador jugador1=new Jugador();
     Jugador jugador2=new Jugador();
+    int turno;
+    
+    
 
     /**
      * Creates new form Tablero
      */
     public Tablero() {
         initComponents();
+        
+        jugador1.simbolo="X";
+        jugador2.simbolo="O";
+        
+        
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,30 +55,80 @@ public class Tablero extends javax.swing.JFrame {
 
         btn1.setMaximumSize(new java.awt.Dimension(73, 73));
         btn1.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn1MouseClicked(evt);
+            }
+        });
 
         btn3.setMaximumSize(new java.awt.Dimension(73, 73));
         btn3.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn3MouseClicked(evt);
+            }
+        });
 
         btn4.setMaximumSize(new java.awt.Dimension(73, 73));
         btn4.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn4MouseClicked(evt);
+            }
+        });
 
         btn5.setMaximumSize(new java.awt.Dimension(73, 73));
         btn5.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn5MouseClicked(evt);
+            }
+        });
 
         btn6.setMaximumSize(new java.awt.Dimension(73, 73));
         btn6.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn6MouseClicked(evt);
+            }
+        });
 
         btn7.setMaximumSize(new java.awt.Dimension(73, 73));
         btn7.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn7MouseClicked(evt);
+            }
+        });
 
         btn8.setMaximumSize(new java.awt.Dimension(73, 73));
         btn8.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn8MouseClicked(evt);
+            }
+        });
 
         btn9.setMaximumSize(new java.awt.Dimension(73, 73));
         btn9.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn9MouseClicked(evt);
+            }
+        });
 
         btn2.setMaximumSize(new java.awt.Dimension(73, 73));
         btn2.setPreferredSize(new java.awt.Dimension(73, 73));
+        btn2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn2MouseClicked(evt);
+            }
+        });
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,6 +182,118 @@ public class Tablero extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn1MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn1.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn1.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn1MouseClicked
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn2MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn2.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn2.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn2MouseClicked
+
+    private void btn3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn3.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn3.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn3MouseClicked
+
+    private void btn4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn4.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn4.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn4MouseClicked
+
+    private void btn5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn5.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn5.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn5MouseClicked
+
+    private void btn6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn6MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn6.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn6.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn6MouseClicked
+
+    private void btn7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn7MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn7.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn7.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn7MouseClicked
+
+    private void btn8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn8MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn8.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn8.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn8MouseClicked
+
+    private void btn9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn9MouseClicked
+        // TODO add your handling code here:
+        if(turno==0){
+            btn9.setText(jugador1.simbolo);
+            turno=1;
+        }
+        if(turno==1){
+            btn9.setText(jugador2.simbolo);
+            turno=0;
+        }
+    }//GEN-LAST:event_btn9MouseClicked
 
     /**
      * @param args the command line arguments
