@@ -189,7 +189,7 @@ public class Tablero extends javax.swing.JFrame {
             btn1.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn1.setText(jugador2.simbolo);
             turno=0;
         }
@@ -205,7 +205,7 @@ public class Tablero extends javax.swing.JFrame {
             btn2.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn2.setText(jugador2.simbolo);
             turno=0;
         }
@@ -217,7 +217,7 @@ public class Tablero extends javax.swing.JFrame {
             btn3.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn3.setText(jugador2.simbolo);
             turno=0;
         }
@@ -229,7 +229,7 @@ public class Tablero extends javax.swing.JFrame {
             btn4.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn4.setText(jugador2.simbolo);
             turno=0;
         }
@@ -241,7 +241,7 @@ public class Tablero extends javax.swing.JFrame {
             btn5.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn5.setText(jugador2.simbolo);
             turno=0;
         }
@@ -253,7 +253,7 @@ public class Tablero extends javax.swing.JFrame {
             btn6.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn6.setText(jugador2.simbolo);
             turno=0;
         }
@@ -265,7 +265,7 @@ public class Tablero extends javax.swing.JFrame {
             btn7.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn7.setText(jugador2.simbolo);
             turno=0;
         }
@@ -277,7 +277,7 @@ public class Tablero extends javax.swing.JFrame {
             btn8.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn8.setText(jugador2.simbolo);
             turno=0;
         }
@@ -289,7 +289,7 @@ public class Tablero extends javax.swing.JFrame {
             btn9.setText(jugador1.simbolo);
             turno=1;
         }
-        if(turno==1){
+        else{
             btn9.setText(jugador2.simbolo);
             turno=0;
         }
