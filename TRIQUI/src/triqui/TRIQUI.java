@@ -17,6 +17,8 @@ public class TRIQUI {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        Tablero Triqui=new Tablero();
+        Triqui.setVisible(true);
         
     }
     

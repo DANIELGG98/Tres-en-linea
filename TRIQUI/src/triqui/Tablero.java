@@ -16,6 +16,10 @@ public class Tablero extends javax.swing.JFrame {
     Jugador jugador1=new Jugador();
     Jugador jugador2=new Jugador();
     int turno;
+    int p;
+    
+    String [][] matriz=new String[3][3];
+    
     
     
 
@@ -193,6 +197,8 @@ public class Tablero extends javax.swing.JFrame {
             btn1.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn1.getText();
+        
     }//GEN-LAST:event_btn1MouseClicked
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
@@ -209,6 +215,7 @@ public class Tablero extends javax.swing.JFrame {
             btn2.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn2.getText();
     }//GEN-LAST:event_btn2MouseClicked
 
     private void btn3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3MouseClicked
@@ -221,6 +228,7 @@ public class Tablero extends javax.swing.JFrame {
             btn3.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn3.getText();
     }//GEN-LAST:event_btn3MouseClicked
 
     private void btn4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4MouseClicked
@@ -233,6 +241,7 @@ public class Tablero extends javax.swing.JFrame {
             btn4.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn4.getText();
     }//GEN-LAST:event_btn4MouseClicked
 
     private void btn5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5MouseClicked
@@ -245,6 +254,7 @@ public class Tablero extends javax.swing.JFrame {
             btn5.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn5.getText();
     }//GEN-LAST:event_btn5MouseClicked
 
     private void btn6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn6MouseClicked
@@ -257,6 +267,7 @@ public class Tablero extends javax.swing.JFrame {
             btn6.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn6.getText();
     }//GEN-LAST:event_btn6MouseClicked
 
     private void btn7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn7MouseClicked
@@ -269,6 +280,7 @@ public class Tablero extends javax.swing.JFrame {
             btn7.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn7.getText();
     }//GEN-LAST:event_btn7MouseClicked
 
     private void btn8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn8MouseClicked
@@ -281,6 +293,7 @@ public class Tablero extends javax.swing.JFrame {
             btn8.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn8.getText();
     }//GEN-LAST:event_btn8MouseClicked
 
     private void btn9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn9MouseClicked
@@ -293,6 +306,7 @@ public class Tablero extends javax.swing.JFrame {
             btn9.setText(jugador2.simbolo);
             turno=0;
         }
+        this.matriz[0][0]=this.btn9.getText();
     }//GEN-LAST:event_btn9MouseClicked
 
     /**
